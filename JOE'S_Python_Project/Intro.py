@@ -75,6 +75,32 @@ if nationality=="Kenya" or nationality=="Uganda" or nationality=="Tanzania":
 else:
   print("You dont qualify")
 
+#checking even and odd numbers
+y=8
+if y%2==0:
+  print("Even")
+else:
+  print("odd")
+
+#casting integer to string
+first_name="Joe"
+last_name=4
+full_name=first_name+" "+str(last_name)
+print(full_name)
+
+#float to string
+bucket = 20.0
+books = "50.0"
+total = bucket+float(books)
+result="the total is:"+str(total)+" Kenya shillings"
+print(result)
+
+
+#the while loop
+
+
+
+
 
 
 
