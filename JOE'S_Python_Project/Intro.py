@@ -76,34 +76,51 @@ else:
   print("You dont qualify")
 
 #checking even and odd numbers
-y=8
+y = 8
 if y%2==0:
   print("Even")
 else:
   print("odd")
 
 #casting integer to string
-first_name="Joe"
-last_name=4
-full_name=first_name+" "+str(last_name)
+first_name = "Joe"
+last_name = 4
+full_name = first_name+" "+str(last_name)
 print(full_name)
 
 #float to string
 bucket = 20.0
 books = "50.0"
 total = bucket+float(books)
-result="the total is:"+str(total)+" Kenya shillings"
+result = "the total is:"+str(total)+" Kenya shillings"
 print(result)
 
 
 #the while loop
+z = 1
+while z < 12:
+  print(z)
+  z += 1
 
+#Nationality check program
+visitors = int(input("enter the number of visitors"))
+ugno = 0
+kenyano = 0
+counter = 1
+while counter <= visitors:
+  nationality = input("enter the nationality:")
+  if nationality == "Kenyan":
+      kenyano += 1
+      print("Allowed")
+      counter += 1
+  else:
+    ugno += 1
+    print("Not allowed")
+    counter += 1
 
-
-
-
-
-
+print("The number of visitors is:",visitors)
+print("The number of Kenyans is:",kenyano)
+print("The number of ugandans is:",ugno)
 
 
 
