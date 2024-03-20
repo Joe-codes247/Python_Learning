@@ -102,13 +102,16 @@ while z < 12:
   print(z)
   z += 1
 
+
+
+"""
 #Nationality check program
-visitors = int(input("enter the number of visitors"))
+visitors = int(input("Enter the number of visitors:"))
 ugno = 0
 kenyano = 0
 counter = 1
 while counter <= visitors:
-  nationality = input("enter the nationality:")
+  nationality = input("Enter the nationality:")
   if nationality == "Kenyan":
       kenyano += 1
       print("Allowed")
@@ -121,6 +124,77 @@ while counter <= visitors:
 print("The number of visitors is:",visitors)
 print("The number of Kenyans is:",kenyano)
 print("The number of ugandans is:",ugno)
+"""
+
+
+#for loop in python
+colours = ["blue", "yellow", "red"]
+for x in colours:
+  print(x)
+
+#nested loops using range
+adj = ["Red", "Green", "orange"]
+fruits = ["apple", "banana", "orange"]
+for x in adj:
+  for y in fruits:
+    for z in range(3):
+      print(x,y)
+
+#converting tuples to list
+fruits = ("apple", "banana", "orange")
+print(fruits)
+myfruits = list(fruits)
+myfruits[1] = "mangoes"
+myfruits.append("pineapple")
+fruits = tuple(myfruits)
+print(fruits)
+
+#python dictionaries
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict["brand"])
+
+#creating a function
+def addition(x,y):
+  return x + y
+
+#calling a function
+print("The sum of 5 and 9 is:",addition(5,9))
+
+#function question on list finding the largest number
+def fluid_largest_number(numbers):
+     max_number = float('-inf')
+     for num in numbers:
+       if num > max_number:
+           max_number = num
+
+     return max_number
+
+my_list = [1,2,3,400,5]
+largest_number = fluid_largest_number(my_list)
+print("Largest number is:",largest_number)
+
+#Repeated element list
+my_list = ["apple", "banana", "cherry", "banana", "banana", "apple"]
+repeated_elements = []
+
+for item in my_list:
+  if my_list.count(item) > 1:
+      repeated_elements.append(item)
+print(repeated_elements)
+
+
+
+
+
+
+
+
+
+
 
 
 
