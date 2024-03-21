@@ -183,6 +183,7 @@ repeated_elements = []
 
 for item in my_list:
   if my_list.count(item) > 1:
+    if item not in repeated_elements:
       repeated_elements.append(item)
 print(repeated_elements)
 
